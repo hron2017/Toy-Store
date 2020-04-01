@@ -1,0 +1,183 @@
+//<ШРИФТЫ>===============================================================================================
+
+//<Подключаем шрифты>=======================================================================================
+
+//</Подключаем шрифты>=======================================================================================
+@font-face {
+  font-family: "Arial";
+  src: url("../fonts/ArialMT.eot");
+  src: url("../fonts/ArialMT.eot?#iefix") format("embedded-opentype"), url("../fonts/ArialMT.woff2") format("woff2"),
+    url("../fonts/ArialMT.woff") format("woff"), url("../fonts/ArialMT.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+//<Шрифт по умолчанию>==========================================================================================
+$fontfamily: "Arial";
+//</Шрифт по умолчанию>==========================================================================================
+
+//</ШРИФТЫ>=======================================================================================================
+
+//<ПЕРЕМЕННЫЕ>===========================================================================================================
+$minwidth: 320px;
+$mw: 990;
+$md1: $mw + 12;
+$md2: 992.98;
+$md3: 767.98;
+$md4: 576.98;
+//</ПЕРЕМЕННЫЕ>===========================================================================================================
+
+//<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+aside,
+nav,
+footer,
+header,
+section {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  min-width: $minwidth;
+  position: relative;
+  width: 100%;
+  color: #000;
+}
+body {
+  font-size: 100%;
+  line-height: 1.5;
+  font-size: 13px;
+  color: #4f4f4f;
+  font-family: $fontfamily;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  &.lock {
+    overflow: hidden;
+    @media (max-width: $md3+px) {
+      width: 100%;
+      position: fixed;
+      overflow: hidden;
+    }
+  }
+}
+input,
+button,
+textarea {
+  font-family: $fontfamily;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+//</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
+
+//<ОБОЛОЧКА>===========================================================================================================
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  background-color: #f1f2f2;
+  &.loaded {
+  }
+}
+//</ОБОЛОЧКА>===========================================================================================================
+
+//<ОСНОВНАЯ СЕТКА>===========================================================================================================
+.page {
+  max-width: $mw + px;
+  margin: 0 auto;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media (max-width: $md2+px) {
+    max-width: 750px;
+  }
+  @media (max-width: $md3+px) {
+    max-width: none;
+    padding: 0 10px;
+  }
+}
+.container-sm {
+  max-width: 705px;
+}
+.page-content {
+  width: 100%;
+}
+.main {
+  background-color: #f8f8f8;
+  padding: 27px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+//</ОСНОВНАЯ СЕТКА>===========================================================================================================
+
+//<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
+
+//</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
+
+@import "_vars";
+@import "_mixin";
+@import "blocks/_ui";
+@import "blocks/_forms";
+@import "blocks/_btn";
+
+@import "blocks/_header";
+
+@import "blocks/_sitebar";
+@import "blocks/_page-content";
+@import "blocks/_single-contant";
+@import "blocks/_catalog-contant";
+
+@import "blocks/_footer";

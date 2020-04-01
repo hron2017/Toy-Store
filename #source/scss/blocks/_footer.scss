@@ -1,0 +1,23 @@
+.footer {
+	padding-bottom: 65px;
+	&-nav {
+		padding: 15px 0px 15px 30px;
+		background-color: #f8f8f8;
+		margin-bottom: 18px;
+
+		&__link {
+			color: #747474;
+			border-bottom: 1px solid #747474;
+		}
+	}
+}
+.address {
+	max-width: 290px;
+	margin-left: 29px;
+	font-style: inherit;
+	color: #747474;
+
+	span {
+		color: #5e5e5e;
+	}
+}

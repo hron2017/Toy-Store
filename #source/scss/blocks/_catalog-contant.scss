@@ -1,0 +1,143 @@
+.catalog {
+	&-row {
+		margin-bottom: 35px;
+	}
+
+	&-pagination {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.page-filter {
+	background-color: #4f4f4f;
+	padding: 7px;
+	padding-left: 83px;
+	position: relative;
+	span {
+		color: #fbfbfb;
+		position: absolute;
+		top: 7px;
+		left: 7px;
+	}
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&__item {
+		font-size: 13px;
+		padding: 5px;
+		background-color: #fbfbfb;
+		margin-right: 7px;
+		margin-bottom: 7px;
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+		position: relative;
+
+		&:last-child {
+			background-color: transparent;
+			box-shadow: none;
+			cursor: pointer;
+			&:after {
+				content: "";
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				left: 0;
+				width: 15px;
+				height: 2px;
+				background-color: #fff;
+			}
+			&:before {
+				content: "";
+				content: "";
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				left: 7px;
+				width: 2px;
+				height: 15px;
+				background-color: #fff;
+			}
+		}
+	}
+}
+.pagination {
+	padding-left: 15px;
+	&__nav {
+		display: flex;
+
+		span {
+			margin-right: 23px;
+		}
+	}
+	&__list {
+		display: flex;
+	}
+	&__item {
+		margin-right: 2px;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	&__link {
+		color: #4f4f4f;
+		padding: 3px 7px;
+		border-radius: 3px;
+		@include anim(0.3s, 0s);
+		&:hover {
+			color: #fff;
+			background-color: #fe9253;
+			padding: 3px 7px;
+			border-radius: 3px;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+		}
+	}
+
+	&-arows {
+		cursor: pointer;
+
+		&__prev {
+			position: relative;
+			padding-right: 5px;
+			@include anim(0.3s, 0s);
+			border-bottom: 1px solid #4f4f4f;
+
+			&:hover {
+				color: #fe9253;
+				border-bottom: 1px solid #fe9253;
+			}
+			&:after {
+				content: "";
+				position: absolute;
+				background-image: url(../img/icons/bread-icon.png);
+				background-repeat: no-repeat;
+				transform: rotate(180deg);
+				width: 8px;
+				height: 5px;
+				top: 6px;
+				left: -15px;
+			}
+		}
+		&__next {
+			margin-right: 40px;
+			position: relative;
+			padding-left: 5px;
+			border-bottom: 1px solid #4f4f4f;
+			@include anim(0.3s, 0s);
+			&:hover {
+				color: #fe9253;
+				border-bottom: 1px solid #fe9253;
+			}
+			&:after {
+				content: "";
+				position: absolute;
+				top: 6px;
+				right: -15px;
+				background-image: url(../img/icons/bread-icon.png);
+				background-repeat: no-repeat;
+				width: 8px;
+				height: 5px;
+			}
+		}
+	}
+}

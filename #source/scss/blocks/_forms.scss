@@ -1,0 +1,59 @@
+//<FORM>====================================================================================================
+.header-form {
+  max-width: 320px;
+  position: relative;
+  @media (max-width: $md2+px) {
+    max-width: 180px;
+  }
+  &__btn {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    height: 100%;
+    width: 35px;
+    transform: translateY(-50%);
+    color: #c0c0c0 !important;
+  }
+}
+
+.form {
+}
+
+.form-row {
+  @include flexbox();
+}
+.form__column {
+  padding: 0px 15px;
+}
+.form-input {
+}
+.form-button {
+}
+//</FORM>====================================================================================================
+
+//<INPUT>====================================================================================================
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.input {
+  border-radius: 0 !important;
+  width: 100%;
+  display: block;
+  padding: 0px 30px 0 15px;
+  height: 25px;
+  color: #c0c0c0;
+  &.focus {
+  }
+  &.err {
+  }
+}
+textarea.input {
+  resize: none;
+  padding: 0px 0px;
+}
+//</INPUT>====================================================================================================
