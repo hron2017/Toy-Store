@@ -1,5 +1,6 @@
 .breadcrumbs {
 	margin-bottom: 22px;
+	padding-left: 6px;
 	&__item {
 		padding-right: 30px;
 		display: inline-block;
@@ -125,16 +126,15 @@
 		margin-bottom: 14px;
 		box-shadow: 0 0 3px #fd973d, inset 0 2px 4px #fff;
 
-		&-price {
-			font-size: 30px;
-			color: #fff;
-			margin-right: 15px;
+		font-size: 30px;
+		color: #fff;
+		margin-right: 15px;
 
-			@media (max-width: $md3+px) {
-				font-size: 24px;
-			}
+		@media (max-width: $md3+px) {
+			font-size: 24px;
 		}
-		&-btn {
+
+		span {
 			color: #6c6c6c;
 			font-size: 24px;
 			padding: 5px 15px 5px 18px;

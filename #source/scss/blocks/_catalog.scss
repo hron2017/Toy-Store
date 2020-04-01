@@ -101,7 +101,8 @@
 		padding: 3px 7px;
 		border-radius: 3px;
 		@include anim(0.3s, 0s);
-		&:hover {
+		&:hover,
+		&.active {
 			color: #fff;
 			background-color: #fe9253;
 			padding: 3px 7px;

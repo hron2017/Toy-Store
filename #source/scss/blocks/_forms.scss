@@ -26,6 +26,9 @@
   padding: 0px 15px;
 }
 .form-input {
+  &.focus .input {
+    color: #000;
+  }
 }
 .form-button {
 }
@@ -41,7 +44,6 @@ textarea {
   appearance: none;
 }
 .input {
-  border-radius: 0 !important;
   width: 100%;
   display: block;
   padding: 0px 30px 0 15px;
@@ -50,6 +52,7 @@ textarea {
   &.focus {
   }
   &.err {
+    border: 1px solid red;
   }
 }
 textarea.input {

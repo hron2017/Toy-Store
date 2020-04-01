@@ -3,7 +3,9 @@
 //@prepros-append blocks/mobile-menu.js
 //@prepros-append blocks/tabs.js
 //@prepros-append blocks/popup.js
+//@prepros-append blocks/forms.js
 
+//@prepros-append blocks/goto.js
 
 
 //@prepros-append script.js

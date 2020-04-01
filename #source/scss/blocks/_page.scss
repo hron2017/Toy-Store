@@ -216,6 +216,7 @@
 		margin-bottom: 12px;
 	}
 }
+
 .content-article {
 	display: flex;
 	justify-content: space-between;
@@ -245,19 +246,19 @@
 		line-height: 20px;
 	}
 
-	&__txt,
-	.about-text {
+	&__txt {
 		line-height: 18px;
 		text-align: justify;
 	}
-}
-
-.section-a {
 }
 .about {
 	&__link {
 		color: #e27d55;
 		text-decoration: underline !important;
 		line-height: 20px;
+	}
+	&__text {
+		line-height: 18px;
+		text-align: justify;
 	}
 }

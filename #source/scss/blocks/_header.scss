@@ -27,6 +27,9 @@
 	&__logo {
 		width: 130px;
 
+		@media (max-width: $md4+px) {
+			margin-right: 35px;
+		}
 		img {
 			width: 100%;
 		}
@@ -170,6 +173,11 @@
 		position: relative;
 		padding-left: 1.7857rem;
 		cursor: pointer;
+
+		@media (max-width: $md4+px) {
+			padding-left: 0;
+			padding-top: 0.7857rem;
+		}
 	}
 	span {
 		color: #727272;
@@ -189,6 +197,11 @@
 			height: 1.2143rem;
 			background-image: url(../img/shop_cart.png);
 			background-repeat: no-repeat;
+
+			@media (max-width: $md4+px) {
+				left: 50%;
+				transform: translateX(-50%);
+			}
 		}
 		&:hover {
 			span {
@@ -201,6 +214,10 @@
 	&__cabinet {
 		line-height: 1.2143rem;
 		border-bottom: 1px solid transparent;
+
+		@media (max-width: $md4+px) {
+			text-align: center;
+		}
 		&:before {
 			content: "";
 			position: absolute;
@@ -210,6 +227,11 @@
 			left: 1px;
 			width: 1.2143rem;
 			height: 1.2143rem;
+
+			@media (max-width: $md4+px) {
+				left: 50%;
+				transform: translateX(-50%);
+			}
 		}
 		&:hover {
 			span {

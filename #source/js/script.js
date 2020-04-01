@@ -32,8 +32,12 @@ $('.product-slider').slick({
 
 $('[data-fancybox="gallery"]').fancybox({});
 
-
 $('.page-filter__select').click(function () {
 	$(this).find('select').fadeIn();
-
 });
+
+$('.pagination__link').click(function (e) {
+	e.preventDefault();
+	$('.pagination__link').removeClass('active');
+	$(this).addClass('active');
+})
