@@ -160,6 +160,11 @@ h6 {
   display: flex;
   justify-content: space-between;
   margin-bottom: 8px;
+
+  @media (max-width: $md4+px) {
+    flex-direction: column;
+    padding: 5px;
+  }
 }
 //</ОСНОВНАЯ СЕТКА>===========================================================================================================
 

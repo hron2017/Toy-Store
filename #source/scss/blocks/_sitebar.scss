@@ -2,6 +2,9 @@
 	flex-basis: 212px;
 	margin-right: 21px;
 
+	@media (max-width: $md4+px) {
+		margin-right: 0;
+	}
 	&__btn {
 		display: block;
 		padding: 13px 0px 13px 24px;
@@ -12,6 +15,10 @@
 		position: relative;
 		@include anim(0.7s, 0s);
 		margin-bottom: 29px;
+
+		@media (max-width: $md4+px) {
+			display: none;
+		}
 
 		&:after {
 			content: "\f303";
@@ -30,17 +37,35 @@
 
 	&__img {
 		margin-bottom: 30px;
+		@media (max-width: $md4+px) {
+			display: none;
+		}
 	}
 }
 .sitebar-nav {
 	background-color: #f8f8f8;
 	margin-bottom: 80px;
 
+	@media (max-width: $md4+px) {
+		margin-bottom: 40px;
+	}
+	&__list {
+		@media (max-width: $md4+px) {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+	}
 	&__item {
 		display: block;
 		background-color: #f3f2f0;
 		position: relative;
 		margin-bottom: 4px;
+
+		@media (max-width: $md4+px) {
+			margin-right: 4px;
+			width: 100%;
+		}
 	}
 
 	&__item-link {
@@ -96,6 +121,11 @@
 .submenu-active {
 	height: 100%;
 	padding: 14px 0px 14px 18px;
+}
+.sitebar .article {
+	@media (max-width: $md4+px) {
+		display: none;
+	}
 }
 .article {
 	margin-bottom: 22px;
