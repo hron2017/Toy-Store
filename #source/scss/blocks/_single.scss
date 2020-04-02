@@ -256,6 +256,11 @@
 	&__item {
 		flex: 0 1 23%;
 		display: block;
+
+		@media (max-width: $md3+px) {
+			flex: 0 1 40%;
+		}
+
 		img {
 			display: block;
 			margin-bottom: 5px;
