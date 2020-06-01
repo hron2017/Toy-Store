@@ -152,14 +152,20 @@ h6 {
   overflow: hidden;
   height: 0;
   padding-bottom: 56.25%; }
-  .video video, .video iframe, .video object, .video embed {
+  .video video,
+  .video iframe,
+  .video object,
+  .video embed {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%; }
 
-.videobg video, .videobg iframe, .videobg object, .videobg embed {
+.videobg video,
+.videobg iframe,
+.videobg object,
+.videobg embed {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -175,7 +181,8 @@ h6 {
 
 .slick-slider {
   position: relative; }
-  .slick-slider .slick-track, .slick-slider .slick-list {
+  .slick-slider .slick-track,
+  .slick-slider .slick-list {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
